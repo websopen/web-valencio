@@ -1,0 +1,90 @@
+/* Valencio - Custom Styles */
+/* Tailwind CDN handles most styling */
+
+/* Custom Color Variables - Defaults */
+:root {
+    --valencio-primary: #78716C;
+    --valencio-secondary: #EC4899;
+    --valencio-background: #F5F5F4;
+    --valencio-card-bg: #FFFFFF;
+    --valencio-text: #1C1917;
+    --valencio-accent: #F97316;
+}
+
+.dark {
+    --valencio-background: #1C1917;
+    --valencio-card-bg: #292524;
+    --valencio-text: #FAFAF9;
+}
+
+.bg-marble {
+    background-color: #fafaf9;
+    background-image: url(https://helados.websopen.com/bg-marble.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Apply custom colors to key elements */
+.valencio-themed-bg {
+    background-color: var(--valencio-background) !important;
+}
+
+.valencio-themed-card {
+    background-color: var(--valencio-card-bg) !important;
+}
+
+.valencio-themed-text {
+    color: var(--valencio-text) !important;
+}
+
+.valencio-themed-accent {
+    color: var(--valencio-accent) !important;
+}
+
+.valencio-themed-accent-bg {
+    background-color: var(--valencio-accent) !important;
+}
+
+.valencio-themed-secondary {
+    color: var(--valencio-secondary) !important;
+}
+
+/* Color preview overlay classes */
+.color-preview-enabled .liquid-nav {
+    border-bottom-color: var(--valencio-secondary) !important;
+}
+
+.color-preview-enabled .product-card {
+    background-color: var(--valencio-card-bg) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+    outline: none;
+}
